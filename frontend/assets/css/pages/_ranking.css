@@ -1,0 +1,49 @@
+/* Estilos específicos para a página de Ranking */
+.page-header {
+  padding: 15px;
+  text-align: center;
+  background-color: var(--accent);
+  position: relative;
+  color: var(--text-dark);
+}
+
+.page-header .back-button {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-light);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+body.light-mode .page-header .back-button {
+  color: var(--text-dark);
+}
+
+.ranking-container {
+    padding: 20px;
+}
+
+.leaderboard {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.leaderboard-item .rank {
+    font-weight: bold;
+    font-size: 1.2em;
+    min-width: 40px;
+    text-align: center;
+}
+
+.leaderboard-item .name {
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+.leaderboard-item .xp {
+    font-weight: bold;
+    color: var(--accent);
+}

@@ -1,0 +1,11 @@
+/* Define todas as variáveis de cores e fontes do projeto */
+:root {
+  --accent: #5ec5da;
+  --accent-hover: #4eb3c4;
+  --accent-2: #03e9f4;
+  --bg-dark: #071822;
+  --bg-card: #02121d;
+  --bg-light: #ffffff;
+  --text-dark: #000000;
+  --text-light: #ffffff;
+}

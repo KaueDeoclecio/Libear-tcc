@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Libras Para Todos</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/theme-toggle.js" defer></script>
+</head>
+<body class="login-body">
+    <header class="login-header">
+        <h1>Libras Para Todos</h1>
+        <img src=assets/img/URSO.png alt="Logo" class="logo-topo">
+    </header>
+
+    <main class="login-container">
+        <h2 class="login-title">LOGAR</h2>
+
+        <div class="login-logo">
+            <img src=assets/logo/ícone_urso.jpg alt="Logo do Urso" />
+        </div>
+
+        <form class="login-form" id="login-form">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" required placeholder="Digite sua senha">
+
+            <div id="form-message" class="form-message"></div>
+
+            <button type="submit" class="btn-login">Logar</button>
+        </form>
+
+        <p class="login-footer">
+            Não possui uma conta?
+            <a href="register.html">Cadastrar</a>
+        </p>
+    </main>
+
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/login.js" type="module" defer></script>
+    <script src="assets/js/vlibras-loader.js" defer></script>
+</body>
+</html>

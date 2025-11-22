@@ -1,0 +1,7 @@
+/* Todas as regras de responsividade da aplicação */
+@media (max-width: 480px) {
+  .perfil-card { width: 92%; padding: 16px; }
+  .lessons-grid { grid-template-columns: 1fr; }
+  .lesson-btn { width: 80px; height: 80px; }
+  .bottom-nav .nav-btn { font-size: 18px; }
+}

@@ -1,0 +1,119 @@
+/* Estilos específicos para a página de Lição */
+.lesson-header h1 {
+    font-size: 1.2rem;
+}
+
+.lesson-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.question-media video,
+.question-media img {
+    max-width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    background-color: #333;
+    margin-bottom: 20px;
+}
+
+.question-prompt {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+}
+
+.option-btn { 
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid var(--accent);
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+
+.lesson-footer {
+    padding: 20px;
+    background-color: var(--bg-dark);
+    border-top: 1px solid #333;
+}
+
+body.light-mode .lesson-footer {
+    background-color: var(--bg-light);
+    border-top: 1px solid #ddd;
+}
+
+.feedback {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    min-height: 44px;
+    width: 100%;
+}
+
+.feedback.correct { color: #155724; background-color: #d4edda; }
+.feedback.incorrect { color: #721c24; background-color: #f8d7da; }
+
+.lesson-summary {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.option-btn.selected {
+  background-color: var(--accent); 
+  color: var(--text-dark); 
+}
+
+.lesson-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+  flex: 1; 
+}
+
+.lesson-summary h2 {
+  font-size: 2rem;
+  color: var(--text-light);
+  margin-bottom: 15px;
+}
+
+body.light-mode .lesson-summary h2 {
+  color: var(--text-dark);
+}
+
+.lesson-summary p {
+  font-size: 1.2rem;
+  color: #bdc3c7; 
+  margin-bottom: 30px;
+}
+
+body.light-mode .lesson-summary p {
+  color: #34495e;
+}
+
+
+.lesson-summary a.btn-confirm {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  max-width: 300px; 
+}

@@ -1,0 +1,45 @@
+/* Estilos para formulários e seus elementos */
+.input {
+  width: 100%;
+  padding: 10px 6px;
+  margin-top: 6px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--accent);
+  color: inherit;
+  font-size: 1rem;
+}
+
+.input::placeholder {
+  color: #aaa;
+}
+
+body.light-mode .input {
+  border-bottom: 2px solid #999;
+  color: #111;
+}
+
+.form-message {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  display: none; 
+}
+
+.form-message:not(:empty) {
+  display: block;
+}
+
+.form-message.error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+.form-message.success {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}

@@ -1,0 +1,85 @@
+/* Estilos específicos para a página de Perfil */
+.perfil-page {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding: 20px;
+  padding-bottom: 90px;
+}
+
+.perfil-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.perfil-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.avatar-wrapper {
+  position: relative; 
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid var(--accent);
+  background-color: #3e4c58;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+}
+
+.avatar-text {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+  font-size: 1.1rem;
+  z-index: 1; 
+  text-align: center;
+}
+
+#avatarPreview {
+  position: absolute; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2; 
+  border-radius: 50%;
+}
+
+.mudar-imagem {
+  color: var(--accent);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.mudar-imagem:hover {
+  color: var(--accent-hover);
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.perfil-form label {
+  font-weight: 500;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.form-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 30px;
+}

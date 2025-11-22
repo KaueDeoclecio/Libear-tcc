@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil - Libear</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="assets/js/theme-toggle.js" defer></script>
+</head>
+<body class="perfil-body">
+  
+  <header class="top-bar">
+    <span class="top-title">Libear</span>
+    <img src="assets/logo/logo_urso.png" alt="Logo" class="top-logo">
+  </header>
+
+  <main class="perfil-page">
+      <div class="perfil-card">
+          <h2 class="perfil-title">Seu Perfil</h2>
+          
+          <div class="perfil-avatar">
+              <div class="avatar-wrapper">
+                  <span class="avatar-text">Avatar</span>
+                  <img src="assets/img/avatar-default.png" alt="Avatar do Usuário" id="avatarPreview" onerror="this.style.display='none'">
+              </div>
+              
+              <label for="inputAvatar" class="mudar-imagem">MUDAR IMAGEM</label>
+              <input type="file" id="inputAvatar" accept="image/*" hidden>
+          </div>
+
+          <form class="perfil-form">
+              <div class="form-group">
+                  <label for="nome">Nome</label>
+                  <input type="text" id="nome" class="input" placeholder="Seu nome" />
+              </div>
+
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" class="input" placeholder="seu@email" readonly />
+              </div>
+
+              <div class="form-actions">
+                  <button type="submit" class="btn-salvar">Salvar Alterações</button>
+                  <button type="button" id="toggleTheme" class="btn-theme">Ativar modo claro</button>
+              </div>
+          </form>
+
+          <button class="btn-logout" id="logoutBtn">Sair da Conta</button>
+      </div>
+  </main>
+
+  <nav class="bottom-nav">
+    <button class="nav-btn" data-target="dashboard.html">
+      <i class="fa-solid fa-play"></i>
+    </button>
+    <button class="nav-btn" data-target="ranking.html">
+      <i class="fa-solid fa-trophy"></i>
+    </button>
+    <button class="nav-btn center" data-target="index.html">
+      <i class="fa-solid fa-house"></i>
+    </button>
+    <button class="nav-btn active" data-target="perfil.html">
+      <i class="fa-solid fa-user"></i>
+    </button>
+  </nav>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/perfil.js" type="module" defer></script>
+  <script src="assets/js/vlibras-loader.js" defer></script>
+</body>
+</html>

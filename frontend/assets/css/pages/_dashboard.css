@@ -1,0 +1,51 @@
+/* Estilos específicos para a página do Dashboard (Progresso) */
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    background: var(--bg-card);
+    padding: 25px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+    font-size: 1.4rem;
+    color: var(--accent);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.card p span {
+    font-weight: bold;
+    color: #fff;
+}
+
+body.light-mode .card {
+    background: #f0f0f0;
+}
+
+body.light-mode .card p span {
+    color: #000;
+}
+
+.top-logo {
+  position: absolute;
+  right: 12px;
+  top: 6px;
+  width: 34px;
+  height: 34px;
+}

@@ -1,0 +1,26 @@
+/* Reset global e estilos básicos para tags HTML */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Temas claro/escuro */
+body.light-mode {
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+
+body.dark-mode {
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
