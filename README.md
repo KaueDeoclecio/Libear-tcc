@@ -98,7 +98,7 @@ Passo a Passo
 
 Clone o repositório:
 
-git clone [https://github.com/KaueDeoclecio/Libear-tcc.git] (https://github.com/KaueDeoclecio/Libear-tcc.git)
+git clone (https://github.com/KaueDeoclecio/Libear-tcc.git)
 cd Libear-tcc
 
 
